@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "冯龙宇发布NLP博客的开始"
-categories: linux
+categories: NLP
 tags:  centos7 crontab linux 工具软件  
 author: SnakeSon
 ---
