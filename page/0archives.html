@@ -15,7 +15,6 @@ type: page
         <hr>
         <ul>
           {% for post in site.posts %}
-
             {% unless post.next %}
               <h2 id="y{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</h2>
             {% else %}
@@ -33,7 +32,6 @@ type: page
                 <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 
                 {% include category.html %}
-                {% include tag.html %}
             </li>
 
           {% endfor %}
