@@ -7,15 +7,15 @@
 
 # Site settings
 title: 冯龙宇的技术专栏
-brief-intro: Android and Python Coder
+brief-intro: NLP and ML Coder
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://643435675.github.io" # the base hostname & protocol for your site
+url: "https://github.com/flyingwaters/flyingwaters.github.io" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 
 # other links
-github_username:  643435675
-email: longyufeng.love@QQ.com
+github_username:  flyingwaters
+email: longyufeng.love@163.com
 zhihu_username: fly
 dribbble_username:
 
