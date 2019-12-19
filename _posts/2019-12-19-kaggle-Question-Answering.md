@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "文本相似度"
+categories: NLP
+tags:  DL  NLP  
+author: fly
+---
 # TF2.0 kaggle Question Answering 
 ### 1. 审题
     开放域问答系统， QA系统模仿人们怎样通过阅读互联网查找答案，并且返回一般答案。
