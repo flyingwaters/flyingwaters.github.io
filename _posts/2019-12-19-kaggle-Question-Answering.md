@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "文本相似度"
+title:  "TF2.0 kaggle Question Answering"
 categories: NLP
 tags:  DL  NLP  
 author: fly
