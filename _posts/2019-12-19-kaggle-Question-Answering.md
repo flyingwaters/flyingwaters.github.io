@@ -15,6 +15,10 @@ author: fly
 
     如果成功， 这个challenge 将会激励更有效率和健壮的QA系统.
     
+
+
+
+    
 ### 2.Tensorflow
     tensorflow 是一个针对机器学习的开放资源平台，在TF2.0 中 tf.keras 是更被推荐选择的高层API for Tensorflow ，为了使得模型的建立更加容易直觉地进步， 同时促进问答系统进步。
 
