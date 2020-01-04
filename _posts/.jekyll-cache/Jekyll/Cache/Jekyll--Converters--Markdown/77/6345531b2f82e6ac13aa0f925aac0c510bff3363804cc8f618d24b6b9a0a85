@@ -1,0 +1,53 @@
+I"l<ul id="markdown-toc">
+  <li><a href="#池化层的设置" id="markdown-toc-池化层的设置">池化层的设置</a></li>
+  <li><a href="#1-池化层反向的传播" id="markdown-toc-1-池化层反向的传播">(1) 池化层反向的传播</a></li>
+</ul>
+
+<h2 id="池化层的设置">池化层的设置</h2>
+<p>1）池化层没有激活函数，这个问题倒比较好解决，我们可以令池化层的激活函数为σ(z)=z，即激活后就是自己本身。这样池化层激活函数的导数为1.</p>
+
+<p>2）池化层在前向传播的时候，对输入进行了压缩，那么我们现在需要向前反向推导δl−1，这个推导方法和DNN完全不同。</p>
+<h2 id="1-池化层反向的传播">(1) 池化层反向的传播</h2>
+<p>我们先进行upsample()函数
+<script type="math/tex">% <![CDATA[
+mat(l)=
+\left[
+ \begin{matrix}
+   2 & 8\\
+   4 & 6
+  \end{matrix} 
+\right] %]]></script>
+求解mat(l-1)
+先做还原
+<script type="math/tex">% <![CDATA[
+\left\{
+ \begin{matrix}
+   0 & 0 & 0 & 0 \\
+   0 & 2 & 8 & 0 \\
+   0 & 4 & 6 & 0 \\
+   0 & 0 & 0 & 0 
+  \end{matrix} 
+\right\} %]]></script>
+如果max pooling，则根据前向记录的max元素的位置，还原出mat(l-1)
+<script type="math/tex">% <![CDATA[
+mat(l-1)=
+\left\{
+ \begin{matrix}
+   2 & 0 & 0 & 0 \\
+   0 & 0 & 8 & 0 \\
+   0 & 0 & 0 & 6 \\
+   0 & 4 & 0 & 0 
+  \end{matrix} 
+\right\} %]]></script>
+如果average pooling的话，mat(l-1)还原出来为
+<script type="math/tex">% <![CDATA[
+mat(l-1)=
+\left\{
+ \begin{matrix}
+   0.5 & 0.5 & 2 & 2 \\
+   0.5 & 0.5 & 2 & 2 \\
+   1 & 1 & 1.5 & 1.5 \\
+   1 & 1 & 1.5 & 1.5 
+  \end{matrix} 
+\right\} %]]></script></p>
+:ET
