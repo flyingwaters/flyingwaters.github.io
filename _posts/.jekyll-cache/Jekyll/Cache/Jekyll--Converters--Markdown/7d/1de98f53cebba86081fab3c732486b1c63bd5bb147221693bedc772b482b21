@@ -1,0 +1,91 @@
+I"<ul id="markdown-toc">
+  <li><a href="#1工程实现和应用" id="markdown-toc-1工程实现和应用">1、工程实现和应用。</a></li>
+  <li><a href="#2学术进展的研究方向" id="markdown-toc-2学术进展的研究方向">2、学术进展的研究方向。</a></li>
+  <li><a href="#一知识图谱的定义" id="markdown-toc-一知识图谱的定义">一：知识图谱的定义</a></li>
+  <li><a href="#二数据获取" id="markdown-toc-二数据获取">二：数据获取</a></li>
+  <li><a href="#三数据预处理" id="markdown-toc-三数据预处理">三：数据预处理</a></li>
+  <li><a href="#四数据导入" id="markdown-toc-四数据导入">四：数据导入</a></li>
+  <li><a href="#五-图数据库简介" id="markdown-toc-五-图数据库简介">五： 图数据库简介</a>    <ul>
+      <li><a href="#1--关系型数据库" id="markdown-toc-1--关系型数据库">1- 关系型数据库</a></li>
+      <li><a href="#2--非关系型数据库" id="markdown-toc-2--非关系型数据库">2- 非关系型数据库</a>        <ul>
+          <li><a href="#21-key-value" id="markdown-toc-21-key-value">2.1 Key-value</a></li>
+          <li><a href="#21-文档型" id="markdown-toc-21-文档型">2.1 文档型</a></li>
+          <li><a href="#列存储型" id="markdown-toc-列存储型">列存储型</a></li>
+          <li><a href="#图数据库" id="markdown-toc-图数据库">图数据库</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#apoc---a-package-of-components" id="markdown-toc-apoc---a-package-of-components">APOC - A package of Components</a></li>
+  <li><a href="#cypher语句学习" id="markdown-toc-cypher语句学习">Cypher语句学习</a></li>
+  <li><a href="#知识图谱简单的应用" id="markdown-toc-知识图谱简单的应用">知识图谱简单的应用</a></li>
+  <li><a href="#分布式图计算spark-graphx等等" id="markdown-toc-分布式图计算spark-graphx等等">分布式图计算Spark graphX等等</a></li>
+</ul>
+
+<p>知识图谱学习资料推荐
+（先需要对知识图谱有宏观的概念以及背景了解，推荐 https://www.aminer.cn/ 清华AMiner实验室官网，有一些前沿的信息，以及它2019年发布的知识图谱89页ppt 链接：https://static.aminer.cn/misc/pdf/knowledgegraph.pdf）</p>
+
+<p>作为IT从业者，无论理论学家还是coder，我认为show me the code 是最重要的。建立一个知识图谱，难度范围很大，简单的知识图谱很简单，难得知识图谱有相当得难度。</p>
+
+<p>从两个方面，归纳知识图谱的知识，</p>
+<h5 id="1工程实现和应用">1、工程实现和应用。</h5>
+<h5 id="2学术进展的研究方向">2、学术进展的研究方向。</h5>
+
+<h3 id="一知识图谱的定义">一：知识图谱的定义</h3>
+<p>语义网络/多关系图</p>
+<h3 id="二数据获取">二：数据获取</h3>
+<p>数据库获取
+授权数据和公开数据爬虫
+第三方API</p>
+<h3 id="三数据预处理">三：数据预处理</h3>
+<p>数据清洗，（字段对齐），纠错等等
+知识抽取，NER，关系抽取，知识消歧等等</p>
+
+<h3 id="四数据导入">四：数据导入</h3>
+<p>1- 数据筛选
+2- 知识图谱设计
+3- 批量导入（初始化）
+4- 增量导入（neo4j开源中cypher）</p>
+<h3 id="五-图数据库简介">五： 图数据库简介</h3>
+<p>DB分类：</p>
+<h4 id="1--关系型数据库">1- 关系型数据库</h4>
+<ul>
+  <li>MySQL</li>
+  <li>ORACLE</li>
+  <li>SQL Server</li>
+  <li>DB2
+    <h4 id="2--非关系型数据库">2- 非关系型数据库</h4>
+    <h5 id="21-key-value">2.1 Key-value</h5>
+  </li>
+  <li>Redis</li>
+  <li>MEMcached 等
+    <h5 id="21-文档型">2.1 文档型</h5>
+  </li>
+  <li>MongoDB 等
+    <h5 id="列存储型">列存储型</h5>
+  </li>
+  <li>HBASE 等
+    <h5 id="图数据库">图数据库</h5>
+  </li>
+  <li>Neo4j、InforGrid 等
+    <h3 id="apoc---a-package-of-components">APOC - A package of Components</h3>
+  </li>
+  <li>apoc-3.4.0.3-all.jar</li>
+  <li>mysql-connect-java-5.1.21.jar
+比较重要的neo4j组件
+包含许多功能，详情我们可以查看官方文档
+    <h3 id="cypher语句学习">Cypher语句学习</h3>
+    <p>通过机器学习和模板方法，我们实现text2SQL，我们将自然语言转化为cypher语句。</p>
+    <h3 id="知识图谱简单的应用">知识图谱简单的应用</h3>
+    <p>搜索
+医疗
+金融、风控
+教育
+广告
+零售
+电子商务等等</p>
+    <h3 id="分布式图计算spark-graphx等等">分布式图计算Spark graphX等等</h3>
+    <p>大规模数据分布式存储及处理常用框架，2012年开始广泛使用</p>
+  </li>
+</ul>
+:ET

@@ -1,0 +1,25 @@
+I"�<ul id="markdown-toc">
+  <li><a href="#home" id="markdown-toc-home">home</a></li>
+  <li><a href="#lib" id="markdown-toc-lib">lib</a></li>
+  <li><a href="#lostfound" id="markdown-toc-lostfound">lost+found</a></li>
+  <li><a href="#media" id="markdown-toc-media">media</a></li>
+  <li><a href="#mnt" id="markdown-toc-mnt">mnt</a></li>
+  <li><a href="#opt" id="markdown-toc-opt">opt</a></li>
+</ul>
+
+<p>linux 文件系统</p>
+<h3 id="home">home</h3>
+<h3 id="lib">lib</h3>
+<h3 id="lostfound">lost+found</h3>
+<h3 id="media">media</h3>
+<h3 id="mnt">mnt</h3>
+<h3 id="opt">opt</h3>
+<p>shell可执行权限时</p>
+
+<p>1、source filename 这个命令简单地读取脚本里里面语句依次在当前shell 里面执行，没有建立新的子shell 。那么脚本里面有所新建。改变变量的语句都会保存在当前shell 里面。内部命令，”.”命令 等同于 source test.sh == “.test.sh”</p>
+
+<p>2、sh filename 建立一个子shell，在子shell 中执行脚本里面的语句，该子shell 继承父shell的环境变量，但子shell 新建的、改变的变量不会被带回父shell。</p>
+
+<p>3、./filename 当前目录没有在path中</p>
+
+:ET

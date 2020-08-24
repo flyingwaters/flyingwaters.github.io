@@ -1,0 +1,37 @@
+I"�
+<p>Lecture 05 Linguistic Structure: Dependency Parsing(依存关系语法分析，简称依存分析)</p>
+
+<p>英文是没有分词的，第一个NLP任务为句法分析，句法分析是基于词的意思，对整个句子有一个更深的理解。</p>
+
+<ol>
+  <li>Two views of linguistic structure
+Constituency Parsing
+Constituency = phrase structure grammar = context-free grammars（CFGs）
+无上下文语法
+    <ul>
+      <li>短语结构将单词组织成嵌套的成分。</li>
+      <li>起步单元： 单词被赋予一个类别（part of speech=pos 词性）</li>
+      <li>单词组合成不同类别的短语</li>
+      <li>短语可以递归地组合成更大的短语</li>
+    </ul>
+  </li>
+</ol>
+
+<p>the, cat, cuddly, by, door
+Det  N    Adj     p    N</p>
+
+<p>the cuddly cat,  by the door
+NP —&gt; Det Adj N  PP —&gt; P NP</p>
+
+<p>the cuddly cat by the door
+    NP—&gt;NP PP</p>
+
+<p>上图中</p>
+<ul>
+  <li>Det 指的是Determiner， 在语言学中为限定词</li>
+  <li>NP和VP 为名词短语和动词短语</li>
+  <li>P 为介词</li>
+  <li>PP 指的是Prepositional Phrase，在语言学中的含义介词短语</li>
+  <li></li>
+</ul>
+:ET

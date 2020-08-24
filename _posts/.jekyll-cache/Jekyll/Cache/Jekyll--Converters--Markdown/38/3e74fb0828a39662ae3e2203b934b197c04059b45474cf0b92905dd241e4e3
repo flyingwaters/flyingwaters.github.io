@@ -1,0 +1,22 @@
+I"7<p>python编程</p>
+
+<ol>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>re模块split(“|</td>
+          <td>.”)可以分多个分割符</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>python内置split()只能分割一个分割符</li>
+  <li>str.rjust(32, “0”) 右补零32位， str.ljust(32, “0”)左补零32位</li>
+  <li>dataFrame做并行数据分析, 由dict创建</li>
+  <li>pyspark-sql 类dataframe  以及BlazingSQL +  RAPIDS 作为数据工程和ETL的工具，基于GPU进行矩阵运算</li>
+  <li>multiprogressing.Pool进行apply_async()异步多进程调用，加速简单大规模数据预处理（多核cpu处理器）(共享内存Managers和管道通信pipe) 知乎：https://zhuanlan.zhihu.com/p/64702600</li>
+  <li>docker虚拟机中log日志查看方法</li>
+</ol>
+
+:ET
