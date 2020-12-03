@@ -40,8 +40,11 @@ Then，it combines the features  for  each slot  entity  and  predicts the fine 
 以往low-resource任务，将source domain 和 target domain的slot types设置为一致。
 
 ##### Coach FrameWork 
+
        - BiLSTM_CRF structure  to  predict whether tokens  are slot  entities or not
+
        - predict slot type ,To  generate 所有可能的slot types的表示，we use Encoder BILSTM to    
          encode the hidden states of slot entity tokens and 产生每个槽实体的表示。
+         
        - 模板正则，许多例子中相同slot type在source和target中同时存在，然而，辨别target domain中的slot type仍然十分困难，由于variance。我们的方法中，用slot labels 替换slot entities，用encoder（BiLSTM ）来encoder 两个达向量分别为utterance 和 temnplate向量，以正常模板和utterance为正确，错误模板和uttera 为错误，生成loss训练神经网络，过程略。加大robustness of these slot types in the  target domain 。
 Result： zero-shot 30.55  32.85.  35.82  37.39   20-few shot 53.6  56.53   63.17  64.27  
