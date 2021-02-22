@@ -53,18 +53,18 @@ different DA works that reconstruct utterances one by one independently
 
 1.1--(Shin,Y.；Yoo，K.M.;and Lee,S.-G.2019. Utterance Generation with Variational Auto-Encoder for Slot Filling in Spoken Language Understanding. IEEE Signal Processing Letters)        
 
-(2) Yoo 2020; Hou et al. 2018; Kurata, Xiang, and Zhou 2016
+(2) Yoo 2020; Hou et al. 2018; Kurata, Xiang, and Zhou 2016<br/>
     2.1--(Yoo, K. M. 2020. Deep Generative Data Augmentation for 
-Natural Language Processing. Ph.D. thesis, Seoul National University. ）
+Natural Language Processing. Ph.D. thesis, Seoul National University. ）<br/>
     2.2--(Hou, Y.; Liu, Y.; Che, W.; and Liu, T. 2018. Sequence-to
-Sequence Data Augmentation for Dialogue Language Understanding. In Proc. of COLING, 1234–1245.)
+Sequence Data Augmentation for Dialogue Language Understanding. In Proc. of COLING, 1234–1245.)<br/>
     2.3--(Kurata, G.; Xiang, B.; and Zhou, B. 2016. Labeled Data 
-Generation with Encoder-Decoder LSTM for Semantic Slot Filling. In Proc. of INTERSPEECH, 725–729. )
+Generation with Encoder-Decoder LSTM for Semantic Slot Filling. In Proc. of INTERSPEECH, 725–729. )<br/>
 
 (#3) The Problems  
 
- these generative method tends to generate duplicated utterances, because they can only consider the expression variance between one input-output pair at a time
+ these generative method tends to generate duplicated utterances, because they can only consider the expression variance between one input-output pair at a time<br/>
 
- these defects can be easily avoided by breaking the shackles of current one-by-one augmentation paradigm and considering the extensive instance relations during generation.
+ these defects can be easily avoided by breaking the shackles of current one-by-one augmentation paradigm and considering the extensive instance relations during generation.<br/>
  
-效果大概，100一个类别和slot filling 可以达到提升5%点左右
+效果大概，100一个类别和slot filling 可以达到提升5%点左右<br/>
